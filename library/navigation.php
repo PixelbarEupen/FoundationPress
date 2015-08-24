@@ -23,19 +23,19 @@ if ( ! function_exists( 'foundationpress_top_bar_l' ) ) {
 	function foundationpress_top_bar_l($depth = 5) {
 	    if(!is_int($depth))
 	    	$depth = 5;
-	    
+
 	    wp_nav_menu(array(
-	        'container' => false,                           // Remove nav container
-	        'container_class' => '',                        // Class of container
-	        'menu' => '',                                   // Menu name
-	        'menu_class' => 'top-bar-menu left',            // Adding custom nav class
-	        'theme_location' => 'top-bar-l',                // Where it's located in the theme
-	        'before' => '',                                 // Before each link <a>
-	        'after' => '',                                  // After each link </a>
-	        'link_before' => '',                            // Before each link text
-	        'link_after' => '',                             // After each link text
-	        'depth' => $depth,                              // Limit the depth of the nav
-	        'fallback_cb' => false,                         // Fallback function (see below)
+	        'container' => false				// Remove nav container
+	        'container_class' => '',			// Class of container
+	        'menu' => ''					// Menu name
+	        'menu_class' => 'top-bar-menu left'		// Adding custom nav class
+	        'theme_location' => 'top-bar-l',		// Where it's located in the theme
+	        'before' => ''					// Before each link <a>
+	        'after' => ''					// After each link </a>
+	        'link_before' => ''				// Before each link text
+	        'link_after' => ''				// After each link text
+	        'depth' => $depth				// Limit the depth of the nav
+	        'fallback_cb' => false				// Fallback function (see below)
 	        'walker' => new Foundationpress_Top_Bar_Walker(),
 	    ));
 	}
@@ -47,20 +47,20 @@ if ( ! function_exists( 'foundationpress_top_bar_l' ) ) {
 if ( ! function_exists( 'foundationpress_top_bar_r' ) ) {
 	function foundationpress_top_bar_r($depth = 5) {
 	    if(!is_int($depth))
-	    	$depth = 5;	
-		
+	    	$depth = 5;
+
 	    wp_nav_menu(array(
-	        'container' => false,                           // Remove nav container
-	        'container_class' => '',                        // Class of container
-	        'menu' => '',                                   // Menu name
-	        'menu_class' => 'top-bar-menu right',           // Adding custom nav class
-	        'theme_location' => 'top-bar-r',                // Where it's located in the theme
-	        'before' => '',                                 // Before each link <a>
-	        'after' => '',                                  // After each link </a>
-	        'link_before' => '',                            // Before each link text
-	        'link_after' => '',                             // After each link text
-	        'depth' => $depth,                              // Limit the depth of the nav
-	        'fallback_cb' => false,                         // Fallback function (see below)
+	        'container' => false				// Remove nav container
+	        'container_class' => '',			// Class of container
+	        'menu' => ''					// Menu name
+	        'menu_class' => 'top-bar-menu right'		// Adding custom nav class
+	        'theme_location' => 'top-bar-r',		// Where it's located in the theme
+	        'before' => ''					// Before each link <a>
+	        'after' => ''					// After each link </a>
+	        'link_before' => ''				// Before each link text
+	        'link_after' => ''				// After each link text
+	        'depth' => $depth				// Limit the depth of the nav
+	        'fallback_cb' => false				// Fallback function (see below)
 	        'walker' => new Foundationpress_Top_Bar_Walker(),
 	    ));
 	}
@@ -73,19 +73,19 @@ if ( ! function_exists( 'foundationpress_mobile_off_canvas' ) ) {
 	function foundationpress_mobile_off_canvas($direction = 'left', $depth = 5) {
 	    if(!is_int($depth))
 	    	$depth = 5;
-	    
+
 	    wp_nav_menu(array(
-	        'container' => false,                           // Remove nav container
-	        'container_class' => '',                        // Class of container
-	        'menu' => '',                                   // Menu name
-	        'menu_class' => 'off-canvas-list',              // Adding custom nav class
-	        'theme_location' => 'mobile-off-canvas',        // Where it's located in the theme
-	        'before' => '',                                 // Before each link <a>
-	        'after' => '',                                  // After each link </a>
-	        'link_before' => '',                            // Before each link text
-	        'link_after' => '',                             // After each link text
-	        'depth' => $depth,                              // Limit the depth of the nav
-	        'fallback_cb' => false,                         // Fallback function (see below)
+	        'container' => false				// Remove nav container
+	        'container_class' => '',			// Class of container
+	        'menu' => ''					// Menu name
+	        'menu_class' => 'off-canvas-list'		// Adding custom nav class
+	        'theme_location' => 'mobile-off-canvas',	// Where it's located in the theme
+	        'before' => ''					// Before each link <a>
+	        'after' => ''					// After each link </a>
+	        'link_before' => ''				// Before each link text
+	        'link_after' => ''				// After each link text
+	        'depth' => $depth				// Limit the depth of the nav
+	        'fallback_cb' => false				// Fallback function (see below)
 	        'walker' => new Foundationpress_Offcanvas_Walker($direction),
 	    ));
 	}
